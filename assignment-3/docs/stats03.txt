@@ -1,0 +1,25 @@
+We have the ability to extract statistical regularities from the world about us. We use this ability, which we call statistical learning, to learn about the environment. Other animals can also do this.
+
+In computer science, the term refers to a series of tools for modeling and understanding complex datasets. It is a fairly new area in statistics which blends with parallel development in computer science, especially machine learning.
+
+Machine learning is an AI’s ability to learn from experience. Humans learn as we go along, i.e., we get better with experience. Machines with sophisticated AI software also have this ability.
+
+We refer to this ability in computers, robots, and other devices as machine learning. AI stands for Artificial Intelligence.
+
+Difference between statistical and machine learning
+Machine learning learns from data that does not have explicitly programmed instructions. Statistical learning, on the other hand, relies on rule-based programming, i.e., it is formalized in the way variables relate to one another.
+
+Machine learning can learn from billions of attributes and observations. Statistical learning is based on a much smaller dataset and significantly fewer attributes.
+
+According to PERFICIENT, a digital transformation consulting firm:
+
+“Statistical Learning is mostly about inferences, most of the idea is generated from the sample, population, and hypothesis, in comparison to Machine Learning which emphasizes predictions, supervised learning, unsupervised learning, and semi-supervised learning.”
+
+“Statistical Learning is math intensive which is based on the coefficient estimator and requires a good understanding of your data. On the other hand, Machine Learning identifies patterns from your dataset through the iterations which require a way less of human effort.”
+
+With statistical learning we form a hypothesis beforehand
+Statistical learning involves forming a hypothesis – this happens before we proceed with building a model.
+
+This hypothesis may involve making specific assumptions which we then validate after creating the models.
+
+With machine learning, we directly run the algorithms on the model, thus allowing the data to speak out rather than directing it in a specific direction with our initial assumptions/hypothesis.

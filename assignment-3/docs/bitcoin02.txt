@@ -1,0 +1,80 @@
+We’re hearing lots in the news about Bitcoin. But what exactly is it, how does it work, and what impact will it have in the wider world? Here’s everything you need to know
+
+Invented in 2009, Bitcoin is the world’s oldest and best-known cryptocurrency. Like its various crypto counterparts, it’s also extremely volatile. While many Australian investors are drawn to its fortune-generating potential, it’s rarely a smooth or even successful path to wealth building.
+
+Cryptocurrencies are also a popular haunting ground for scammers, and a number of Australians have lost tens of thousands of dollars in crypto scams.
+
+What is a Bitcoin?
+People once traded physical assets such as gold and silver for goods and services. But these were hard to carry and vulnerable to theft and loss, so banks offered to hold them for us, issuing notes that proved the wealth we had in the bank.
+
+Eventually, the link between these notes and the commodities they represented was broken. Instead, governments said the notes themselves had value.
+
+We trust banks to honour the value of our currency so that we can accept cash as payment and trust others will accept it from us.
+
+A cryptocurrency is essentially a digital version of cash that exists outside the established framework of national governments and central and private banks. It enables two people to exchange it or buy and sell with it without the likes of Westpac or NAB needing to facilitate the payment.
+
+In other words, each party to the transaction trusts that the asset being exchanged has inherent value.
+
+How do Bitcoin Payments Work?
+Making a Bitcoin payment is as simple as sending an email. To complete a transaction, you transfer Bitcoins from your digital wallet, which you obtain when purchasing the currency on a crypto exchange, to someone else’s wallet using an app or website. This process involves the sender specifying the recipient’s unique wallet address and the amount of Bitcoin they want to send.
+
+Bitcoin payments rely on wallet addresses, which are unique digital identifiers that enable secure and transparent transactions between users. When you initiate a payment, the transaction is broadcast to the entire Bitcoin network.
+
+These transactions are then processed and verified by a network of everyday individuals who run specialised software on their computers. This decentralised approach to transaction validation ensures that the Bitcoin network remains secure, transparent, and trustworthy for all users.
+
+What is Bitcoin Mining?
+These computers are known as Bitcoin miners, and are essential for the operation of the Bitcoin network. Bitcoin mining is a process in which Bitcoin miners compete to solve intricate mathematical puzzles. This process not only verifies transactions but also maintains the integrity and security of the entire Bitcoin network. Each time a miner cracks one of these complex puzzles, they earn the right to create a new “block” that records a group of transactions, including details like the sender’s and recipient’s Bitcoin addresses and the amounts transferred.
+
+These blocks are added to a shared online ledger called the blockchain, which creates an immutable, transparent, and indisputable record of all Bitcoin transactions. Since everyone’s copy of the blockchain must match, it’s virtually impossible for someone to falsely claim they have more Bitcoin than they actually possess—any discrepancies would be immediately noticeable.
+
+Mining Bitcoin is a resource-intensive process that requires high-end computer hardware and consumes a significant amount of energy. However, this energy-intensive process plays a critical role in securing the decentralised nature of the Bitcoin network. By distributing the responsibility of transaction validation and record-keeping among multiple miners, the network achieves a decentralised consensus that ensures its trustworthiness and resistance to fraud or manipulation.
+
+In essence, Bitcoin mining is a fascinating and essential process that combines cutting-edge technology, mathematical prowess, and the principles of decentralisation. Together, these elements create a secure, transparent, and indisputable record of all Bitcoin transactions—forming the backbone of the world’s first truly decentralised digital currency.
+
+A Bitcoin miner who adds a block to the chain is issued with new Bitcoins worth thousands of dollars. While this may seem like free money, but the investment required to build and run a machine capable of processing a block is significant and increases over time.As more bitcoins are mined, the rate at which new bitcoins are created gradually reduces due to the Bitcoin protocol’s design, which halves the mining reward every 210,000 blocks, which is around every four years.
+
+Around 900 Bitcoins are ‘minted’ every day. At today’s prices, their total value is more than $AU37 million. The total supply of Bitcoins is limited to 21 million. Once the limit is reached, it won’t be possible to mint any more.At the current trajectory, it’s predicted the last Bitcoin will be mined by 2140 unless current protocols are changed.
+
+How to Use Bitcoin
+You can buy it, sell it and use it to purchase goods and services wherever it’s accepted. You don’t have to spend in whole Bitcoins—each one can be subdivided (see below).
+
+Bitcoin payments aren’t exactly mainstream, but big names like Microsoft, Express VPN and Wikipedia take Bitcoin payments.
+
+Many people simply invest in Bitcoin in the hope that it will go up in value. Bitcoin reached almost $US69,000 in November of 2021, but later fell by a dramatic 70% in value. At the time of writing in March 2023, one Bitcoin was valued at around $US28,000. The cryptocurrency continues to fluctuate in value today, with some industry figureheads arguing that the value of Bitcoin could stay well below its peak for the next two years.
+
+This kind of market volatility has raised regulators’ eyebrows. The Federal Government, through its Moneysmart website, points out that crypto is, in most cases, not considered to be a financial product and therefore your crypto platform may not be regulated by the corporate regulator, the Australian Securities and Investments Commission (ASIC).
+
+As Moneysmart states: “When a cryptocurrency fails, investors will most likely lose all the money they put in.”
+
+The Federal Government is planning a review of cryptocurrency, that will offer greater protections to consumers, while ensuring investment isn’t stifled.
+
+Who Can Buy Bitcoin?
+Anyone can buy Bitcoin from crypto exchanges, such as Kraken and Coinbase. According to Roy Morgan research, more than one million Australians aged 18 and over, or 5% of the population, invest in cryptocurrency.
+
+However, unless you have a spare $US28,000 in your account to buy a single token, you’re going to be buying a fraction, or a share, of one Bitcoin.
+
+Smaller denominations of Bitcoin are called Satoshis after the pseudonym used by its anonymous inventor(s). One Satoshi is worth 0.00000001 Bitcoin.
+
+As mentioned previously, Bitcoin and the cryptocurrency market are still unregulated in Australia. This means there are no rules in place to protect you from losing everything, and no watchdog to ensure everyone involved plays fair.
+
+What Do I Need to Mine Bitcoin?
+According to Bitcoin expert and journalist Connor Sephton, miners need three things to succeed: access to cheap electricity, hardware known as application-specific integrated circuits (ASICs), and mining software that connects them to the Bitcoin network.
+
+The most capable ASICs can cost thousands of dollars to buy and run, making them prohibitively expensive for the average person.
+
+Is Bitcoin the Only Cryptocurrency?
+There are countless other cryptocurrencies, collectively referred to as altcoins.
+
+They include well-established altcoins like Ethereum and Litecoin, as well as fledgling altcoins like Elrond and Clover. Each currency has different values and rules, but they all follow the basic precepts of cryptocurrency.
+
+What are the Benefits of Bitcoin?
+With no intermediary, there’s nobody to take a cut of each transaction. Bitcoin is a global currency that’s also easier to move across borders and, as a relatively anonymous currency, it makes transactions truly private.
+
+It’s also revered by many proponents of ‘DeFi’ — or decentralised finance — because it is not reliant on human gatekeepers or middlemen.
+
+What are the Drawbacks of Bitcoin?
+It’s unregulated, volatile and can’t be used as widely as traditional currencies.
+
+The amount of energy used globally to make Bitcoin work is also massive. It has the same carbon footprint as the entire country of Argentina, according to Oxford University researchers in the UK.
+
+This has raised questions about the long-term sustainability of the phenomenon, especially as global economies strive to reduce their greenhouse gas emissions in line with international environmental agreements and associated ‘green’ targets.

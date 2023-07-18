@@ -1,0 +1,185 @@
+Why Linux? Why Debian?
+By Manoj Srivastava (srivasta at debian.org)
+
+I am perhaps not the best person to talk about a dispassionate comparison of operating system choices, partially because I am not unbiased, and partially because of my limited experience with any OS that is not my primary choice. I am also not a prime candidate for advocacy of my choices, since the reasons I have chosen what I like are unlikely to be universal, and the environment in which I originally made my decision (since there is a modicum of historical inertia that keeps me where I am) no longer exists.
+
+However, I have tried to make this talk have a broader perspective than my views alone, and have solicited the opinions of other folks that have made the same choices that I have -- but given how subjective this topic is, I am going to speak here mostly from my perspective, and the perspective of people who have already selected Debian.
+
+Given the nature of the primary audience for this talk, I am not going to spend much time expanding on why one should choose a UNIX like OS over Microsoft's operating systems. Suffice it to say that the following criteria pointed me unequivocally away from Windows: Security. Flexibility. Control of features. Philosophy. Cost. Speed. Efficiency. Reliability. Availability and choices in application software. Susceptibility to Worms and Viruses. Openness and speed of resolution of known flaws. Clustering. Multi-user OS. Not having the GUI or a HTTP browser as an integral part of the OS.
+
+https://www.michaelhorowitz.com/Linux.vs.Windows.php provides a relatively unbiased comparison of Linux and Windows, and can serve as an introduction of Linux to Windows users. It does have more of a commercial bent than is appropriate for this talk (the concern of the market success of Linux distributions/companies, for example).
+
+Philosophy and Community
+Ultimately, philosophy is the most durable differentiating criterion between the operating systems we are considering. Performance numbers change. Ease of use, reliability, availability of software -- all these characteristics change over time, and you have to go out and re-evaluate them over time.
+
+I must confess that philosophy and community is what led me originally into the Linux camp, and then to Debian; and I think these are still the most important criteria, and are often underrated.
+
+Why is free software a good thing? Over nearly two decades that I have been involved with free software, I have asked people this question (and often been surprised by the answers). The popular answer seems to be because it is cool, or because it is zero-cost. The motivations of the authors also are varied, but the coin that they get paid in is often recognition, acclaim in the peer group, or experience that can be traded in in the work place.
+
+But I think that is missing the critical raison d'être for free software -- the standing on the shoulder of giants aspect. I like to give the analogy to the manner in which academic research is conducted. If researchers were doomed to reinvent the wheel, and discover for themselves everything beyond what existed in the textbooks, then progress in the research community would be stunted. Most of my peers got their start in research by doing literature searches, looking for interesting investigations, and perhaps correlating unrelated papers, building on the ideas and techniques of other researchers in the field. The secrecy shrouding research in most labs exists only till the moment of publication -- and then people share their techniques, and ideas, and results -- indeed, reproducibility is a major criteria of success.
+
+Contrast this with proprietary software, where we do all begin from scratch -- I believe we could soar, if only we could freely share and build upon the ideas and labours of others. This would lower the time, effort, and cost of innovation, allow for best practices and design patterns to develop and mature, and reduce the grunt programming that raises the barrier to developing solutions in house.
+
+We just have to ensure that the incentive for achievement still exists (and it need not be purely a profit motive).
+
+This belief led me to chose the GPL, and free software foundation view of things, as opposed to the BSD licence, which are also free software licenses, and led eventually to choosing Debian. In my personal opinion, the BSD license has been more about personal pride in writing free software, with no care as to where the software went; I want more than that. I want my labours to help build a synergistic community; to feed back into a well spring of useful software.
+
+Debian is an exercise in community barn building; together, we can achieve far more than we could on our own. The Debian social contract is an important factor in my choice of Debian, with its blend of commitment to free software, and pragmatic recognition that there are going to be cases where usability demands software that does not meet our guidelines.
+
+Community is the other reason I went to Linux rather than the BSD's. At the time I was looking around for a free UNIX like OS to put on my brand new university issued 386, the BSD's were far more robust, and performed far better, and I had friends who swore by the BSD's. What turned me off was the caste system that permeated the BSD community. There were core developers up on high, and you went down to lowly newbie wannabe contributors. The Linux community, though rambunctious, seemed far more inclusive -- your pedigree mattered less than the code you produced. And I could contribute immediately to developing the OS I would be running. I guess this is another reason I like Debian -- I have been there long enough to guide it into being the OS that is laid out the way I think.
+
+Utility and usability
+Assuming I have not totally lost the pragmatists amongst you, the criteria that the vast majority of people hold highest while choosing an operating system are, after cost, utility and usability. Of course, utility depends on what your goals and requirements are, but there broad areas we can still address.
+
+There is more to an operating system than a kernel with a hodge-podge of software thrown on the top - systems integration is a topic usually given short shift when discussing the merits of a system. But a well-integrated system - where each piece dovetails with and accommodates other parts of the system - has greatly increased utility over the alternative.
+
+Debian, in my experience, and the experience of a number of my respondents, is the best integrated OS out there. Debian packages trace their relationships to each other not merely through a flat dependency/conflicts mechanism, but a richer set of nuanced relationships - Pre dependencies, ordinary dependencies, recommendations, suggestions, conflicts, and enhances relationships. Apart from this, packages are categorized according to priority (Essential through extra), and their function. This richness of the relationships, of which the packaging system is aware and pays attention to, indicates the level at which packages fit in with each other.
+
+Debian is developed by about 1000 volunteers. That means that every developer is free to maintain programs he is interested in or he needs for his special tasks in real life. That's why Debian is able to cover different fields of specializations - its developers just want to solve their own special problems. This broad focus is different from commercial distributions which just try to cover mainstream tasks.
+
+I have found that the Debian machines at work take less hand holding, are easier to update, and just plain don't break as often as the Red Hat and Mandrake boxes I manage. I am told that dealing with SunOS, for example, is far more, umm, interesting.
+
+One of the reasons for selecting Debian over other distributions is the sheer size of the project which strongly suggest that Debian won't suddenly disappear and one is suddenly left without any support. Debian can't go bankrupt. Its social contract doesn't allow the project to abruptly decide not to support non enterprise versions of the distribution. I do not want my OS to be held hostage to anyone's business plan!
+
+You can fine-tune the degree of risk you want to take, since Debian has three separate releases: Stable, Testing, and Unstable. On some of our machines (the server, the kiosk machines) we run 'stable'. Some of the other systems (individual work-stations) run various combinations of testing/unstable. (Note that there are no security updates for testing). I run some stuff from experimental on my own work-station. What's great is the ability to make finely graded decisions for different machines serving different functions. But even the more adventurous choices are solid enough that they virtually never break. And `stable' just never breaks ;-).
+
+Debian provides a great deal of feedback upstream. For example, the XFree project does not itself maintain or debug X on all the architecture Debian supports -- it relies on Debian for that. There have been a number of deep fixes to libc (there was a recent reference counting flaw in glibc when dlopening a shared object with certain ELF dependencies discovered by the Debian developers). This attention to detail is hard for any other Linux distribution to match. The level of knowledgeable, fast, and friendly help available for end users is just extraordinary -- and nothing I have been able to match from old style commercial companies like DEC -- unless you are paying them really big bucks. This can provide third party support without in house expertise, for businesses building upon Debian.
+
+For derivative systems, DFSG and "main" simplify building systems with predictable licensing.
+
+Quality of implementation
+People often say how they came to Debian because of apt-get, or that apt is the killer app for Debian. But apt-get is not what makes the experience so great: apt-get is a feature readily reproduced (and, in my opinion, never equalled), by other distributions -- call it urpmi, apt4rpm, yum, or what have you. The differentiating factor is Debian policy, and the stringent package format QA process (look at things like apt-listchanges, apt-list-bugs, dpkg-builddeps, pbuilder, pbuilder-uml -- none of which could be implemented so readily lacking a policy (imagine listchangelog without a robust changelog format)). It is really really easy to install software on a Debian box.
+
+This resembles cargo cult (https://en.wikipedia.org/wiki/Cargo_cult) religions: that is, apt-get is the visible aspect of Debian's policy system, the same way that cargo-cult practices saw runways and other characteristics as the source of western goods ("cargo"), and built their own replicas, complete with fake wooden headphones for control towers. In the same way, other distributions have created the shallow visible aspect of Debian's packaging infrastructure, without addressing the deep issues of policy. Worse: the conflicts of technical requirements and marketing / economic imperatives often work at cross purposes. Less perversely for most GNU/Linux distros than for proprietary software, but still clearly present.
+
+Red Hat, Mandrake, and other distributions in the class have really massive base installations. Why? I do believe it's because it's a PITA to install software. Even with RPM, it's a kludgey procedure, impossible to codify. With Debian, it was a breeze.
+
+So the killer app is really Debian policy, the security team, the formal bug priority mechanisms, and the policy about bugs (namely: any binary without a man page is an automatic bug report. Any interaction with the user not using debconf is a bug). As the Wiki page Why Debian Rocks (http://twiki.iwethey.org/Main/WhyDebianRocks) puts it:
+
+
+This is the crux, the narthex, the throbbing heart of Debian and what makes it so utterly superior to all other operating systems. Policy is defined. It is clear. It is enforced through the tools you use every day. When you issue apt-get install foo, you're not just installing software. You're enforcing policy - and that policy's objective is to give you the best possible system.
+
+What Policy defines are the bounds of Debian, not your own actions on the system. Policy states what parts of the system the package management system can change, and what it can't, how to handle configuration files, etc. By limiting the scope of the distribution in this way, it's possible for the system administrator to make modifications outside the area without fear that Debian packages will affect these changes. In essence, Policy introduces a new class of bugs, policy bugs. Policy bugs are release-critical -- a package which violates policy will not be included in the official stable Debian release.
+
+Let me reiterate, because that is the whole secret: A package which violates policy will not be included in the official stable Debian release.
+Add to that the Debian QA team which does non maintainer uploads (NMUs), helps with bug cleanup, performs security updates, and ensure that there is someone looking at the system holistically, and working to create an integrated OS, as opposed to merely fixing individual packages in isolation. That is what makes people swear by Debian. There are a lot of tools in the QA subsystem to help developers take care of their packages -- just look at https://qa.debian.org/developer.php?login=srivasta.
+
+The evaluation process each package has to undergo in the unstable distribution before it makes it into testing adds to the quality of the finished product. Once a package has not shown any important problem for a certain time period, it goes into the testing distribution. This distribution is the release candidate for the future stable distribution, which is released only when all release critical bugs are resolved. This careful testing process is the reason why Debian has a longer release cycle than other distributions. However, in terms of stability this is an advantage. (Note: RH Enterprise Linux is apparently shooting for 12 - 24 month release cycles. Closer to what Debian historically had.)
+
+The fact that Debian supports as many architectures as it does also feeds into the quality of packages: porting software often uncovers flaws in the underlying code. Add to the fact that all software in Debian goes though 10 or so automatic build daemons, and needs be bug free when building on these different environments, requires that the build and install scripts be very robust, and requires a very strict tracking of build time dependencies. Add source archive mirrors and version tracking, and you have a fairly robust system (snapshot.debian.org provides for easy rollbacks).
+
+The Debian bug tracking system is a key to the quality of the distribution. Since releases are linked to the numbers of release critical bugs in the system, it ensure that the quality of the release is better than any proprietary UNIX I have run. The Release Manager is fairly ruthless about throwing out any non essential package with RC bugs if they do not get fixed -- or delaying the release if it is a critical package with the bug.
+
+Compared to commercial Linux distributions, Debian has far higher developer to package ratios. Added to the lack of business cycle driven deadlines, Debian tends to do things right, rather than do things to get a new version out in time for Christmas.
+
+According to a recent Slashdot story, there are more distributions based on Debian now than there are for the market leader, RedHat (63 and counting, including Ubuntu, Xandros, Knoppix, Lycoris, Lindows (Lind--s ?), Libranet, mophix ...).
+
+Fault recovery is absolutely bar-none the best. (see http://www.linuxworld.com/story/32607.htm) See also the script (http://linuxmafia.com/faq/Debian/package-database-rebuild.html) about recovering a Debian system without having a backup of /var/lib/dpkg.
+
+Feature set and Selection of Software
+Debian has over 29,000 packages now. The chances are that anything you need is already packaged and integrated into the system, with a person dedicated to keeping it (and a small number of other packages) up to date, integrated, and bug free.
+
+Debian has a huge internationalization effort, translating not only the documentation (I have people who send me translated manual pages for the packages I maintain), but also the configuration and install scripts (all debconf interaction can be fully internationalized). It helps to have a massively geographically distributed community -- we have native speakers in tonnes of languages. I think the internationalization effort in Debian matches that for Gnome and KDE.
+
+Other notables, for which I have too little time to pay proper attention to, are: The Debian documentation project, Alioth, Debian installer, Debian CD, Lintian, and the package tracking system.
+
+Some other things which will keep me using Debian until they're supported by something else:
+
+debconf and the ability to pre-seed the database
+make-kpkg with all the install-time prompts turned off
+/usr/share/doc/{Changelog.Debian,changelog,copyright,README.Debian}
+Debian also has a great set of tools for kernel or distribution hackers and systems integrators debbootstrap, chroots, user mode Linux, Xen. All kinds of neat tools to help hack on installation mechanisms, kernels and drivers.
+
+There are a number of niche communities that have found a home with Debian. These are sub projects; Debian-Jr, Debian-med, Debian-Edu, Debian-non-profit, and Debian-lex. A number of Debian developers are blind, and as a result, Debian is very very friendly to the blind. There is additional material on Debian Pure Blends.
+
+Kernels
+The BSD kernels, from all accounts, seem to be stabler, and of better quality than Linux kernels seem to be. BSD kernels are much easier to read and understand. On the flip side, Linux kernels more feature rich, and the quality has improved significantly, seem to perform much better, and better hardware support than the BSD kernels do. Indeed, I've heard comments that when it comes to driver support, the BSD's are where Linux was 5 years ago. I'll talk more about hardware support below. Personally, the supposed added bugginess of the Linux kernels have not exceeded my threshold of acceptability. And, overall, I don't think that a Debian box feels any less robust and stable than, say, a FreeBSD box. Of course, the recent spate of holes in Linux kernels are beginning to strain that. (However, we should keep in mind that having more features is a contributory factor: the two latest holes were in the mremap(2) call that is not available for any of the *BSD.)
+
+Of course, Debian Gnu/FreeBSD may provide the best of both worlds.
+
+User Land
+The BSD user land is different from the GNU user land. I have grown up with the GNU user land installed on Ultrix/Aix/HP-UX boxes for consistency, and for me the GNU userland feels far more comfortable.
+
+It should be noted that you can install the GNU userland on a BSD box, and a number of people do so (/usr/local/gnu/*, for example). Of the installations that do have both sets of utilities installed, the reports are that the user-base overwhelmingly uses the GNU utilities, even though that's not the default. In general, the FreeBSD utilities appear to be lighter weight but feature poor, and on modern hardware the small amount of memory savings just doesn't matter.
+
+It also doesn't help that they don't provide good command line help; it's much easier to tell a newbie that if they type foo --help they will get something that might be useful.
+
+OpenBSD's base userland is quite complete. I prefer the GNU userland because I am used to it, but OBSD's base system is quite workable. FBSD is quite a different story - In FBSD they strive to produce a minimal base system, and they don't expect people to only use that - they expect people to install many ports. FreeBSD becomes the most Debian-like system in the BSD family - you have a base system and you build on top of that. Its userland is whatever you choose it to be.
+
+Maintenance and administration
+Upgrades have been said to be the killer advantage for Debian. More than most other OS's, the network is the distribution and upgrade mechanism for Debian. Policy, the thought that has gone into the maintainer scripts, and the ways in which they can be called, the full topographical sorting over the dependency web done by apt and friends, all work together to ensure that upgrades in place work smoothly (I've never had to reinstall my machines, though some have been upgraded in place for over 5 years). Reinstalls are not unheard of in an recommended BSD upgrade path (Since 2.8 or 2.9, OpenBSD said at least two times to i386 users "upgrade not supported / not recommended, do a fresh install").
+
+This ease of upgrades also plays into security of the system; security upgrades are far more convenient on Debian than they are on other systems, thanks to the Security team. For us mere mortals not on vendor-sec, having security.debian.org in our sources list ensure that our boxes get updated conveniently, and quickly, after any exploit is made public -- since the security team was already working on a fix before the details went public. This means that systems get updated in minutes, whereas the recommended way to do an upgrade on a BSD OS involves recompiling the entire system (at least, the "world").
+
+Debian attempts to ensure smooth upgrades skipping a major release - which is not something that I have seen supported elsewhere. I keep coming back to quality of packaging.
+
+Administering Debian is the primary reason most people stay with it. I know no other distribution where you can type in apt-get install sendmail, and walk away with a fully functional mail server, complete with SASL and TLS, fully configured, complete with certificates. All administration can be done over SSH given only dial-up speeds.
+
+The Debian guarantee that user changes to configuration files shall be preserved, and that all configuration files shall live in /etc (as opposed to being all over the file system) makes for easier backups (I have my /etc living under version control).
+
+Debian is compliant with the FHS, and LSB compliance is a release goal.
+
+The distributed nature of Debian development and distribution makes it really easy to set up a separate repository of custom packages that can then be distributed in house; and the policy and build mechanisms ensure that third parties can build the system just as easily in a reproducible fashion.
+
+Portability and Hardware Support
+Linux tends to support more of the esoteric hardware than BSD does. whether that is a problem, depends on your needs. Support for the high quality hardware is mostly the same. A notable exception is for RAID hardware; the 3ware RAID cards are just becoming supported in BSD, but have had Linux support for a while. IBM's assurance of Linux support on all their hardware, and that of HP, is also an advantage for Linux. I also like the multiple journaling file systems that have come into the Linux kernel recently. For desktop, the killer factor is drivers. And Linux leaves all the other X86 Unixes behind by a mile.
+
+When it comes to portability, NetBSD is supposed to be the byword. However, I went and had a good, hard look at what is supported by NetBSD, and Debian: I found that Debian supports ibm s/390 and ia64, while NetBSD has support for sun2 (m68010), PC532 (whatever that is [apparently a custom machine of which only 200 models were ever made]), and VAX. I am sure which set I am more interested in (though it might be cool to have a VAX puttering around in the basement). Note that what NetBSD call architectures are often labeled sub-architectures by Debian, and thus do not count in the 11 supported architecture count.
+
+Source Builds
+I have heard a lot of things about the ports mechanism of BSD, and the portage systems of gentoo. I have also heard about how people have problems actually getting things to compile in the ports system. Apart from the fact that compiling everything rapidly gets old (I have been there, done that, when I used Soft Landing Systems (SLS) distribution back in '93).
+
+It is not as if you can't do a port like auto build of Debian -- we have auto-builders on 11 architectures that do that, continuously, every single day -- the question is why would one want to? I have yet to see a single, replicable test demonstrating any palpable performance improvement by local, tailored optimized compilations -- and certainly none that justifies, in my eyes, the time spent tweaking and building the software all over.
+
+Someone said that when they were younger and felt like playing a prank they would adjust some meaningless parameters on someone's computer and tell them "this will make it run about 5% faster, but you probably won't notice it". With such a challenge they usually responded by becoming totally convinced that their machines had been improved considerably and that they could feel the 5% difference!
+
+Conventional wisdom seems to indicate overall system performance increases are less than 1%. Specific programs can benefit greatly, though, and you can always tweak a critical app for your environment in Debian. I think whatever time is saved by running an optimized system is more than compensated for by the time spent building the system, and building upgrades of the system. (I've heard of people running doing their daily update in the background while doing other things in the foreground.)
+
+Not to mention how integration suffers by not having a central location where interoperability of the pieces can be ever tested well, since every system would differ wildly from the reference.
+
+A source build system is also far more problematic when it comes to major upgrades -- I have anecdotal evidence of it not being as safe and sane as the Debian upgrade mechanisms.
+
+Anyway, if I do want to build packages from source on Debian, I can use apt-get source -b, apt-src, or any of a number of tools. And when doing local builds I do trust that locally built deb's will be installed in a safe and sane way, replacing properly the old stuff. The build depends pull in any required dependencies for builds, and I routinely build in pbuilder-user-mode-linux to ensure uniform builds.
+
+The real point here is that Gentoo is a distro for hobbyists and übergeeks / hard-core linux users, who can spare the time building their apps. I know Gentoo also provides pre compiled binaries -- but does that not defeat their supposed advantage? For an enterprise environment where down time does cost money this is simply inadmissible and Debian provides the best solution. Those of use which administer more than a handful machines can really appreciate how convenient it is to be able to issue apt-get update && apt-get upgrade at once instead of having to go downloading, configuring, compiling and installing software machine per machine, without any sort of automated help ( I am not completely doing justice to emerge / portage here, but the point is clear, I hope ). I can emphasize this enough: for "serious"/production usage, binary distros are the best and only viable solution; Amongst them, Debian ( not only because of APT but also because of all the hard work done by DD to ensure correctness of the packaging ) is the best [I have tried SuSE, RedHat and Mandrake, and I wouldn't go back even if offered lots of money; Gentoo is not an option either].
+
+Security and Reliability
+There is always a trade off between security and convenience -- the ultimately secure computer is one that is never turned on. Secure, but not very useful. You have to decide where your comfort zone lies.
+
+What does one think of when one says Security and Unix like OS? OpenBSD, with some justification. It is audited and has the small size, small system requirements AND the pure text based install. If you stick to the core install, you get an audited system, with no services turned on by default and an assurance that there are no holes in the default install that can lead to a remote root compromise. However, you tend to end up with old software, and the default install really does very little. W^X and protection against stack overflows (?ProPolice) on OpenBSD https://www.openbsd.org/33.html, and exec-shield and Adamantix (PaX) patches for Linux (you may have to recompile your kernel on Debian for these). Most people agree that the secure and audited portion of OpenBSD does not provide all the software they require. Also, OpenBSD's performance numbers are, umm, poor, compared to SELinux on a 2.6.3 kernel.
+
+OpenBSD's secure reputation is justified - but only when you know the project, when you are familiar with what does it really cover. OpenBSD may be a great firewall, maybe even mail or static Web server - As long as you keep out of the ports tree, you do have an audited, security-conscious system. I know few applications, however, for such a system. The OpenBSD userland ports break more often than stable Debian -- but, in OpenBSD, ports are officially not part of the system, and should a security problem appear in one of them, you are on your own.
+
+Arguably, Debian stable equals or beats the exact claims -- and there appears to be little real world difference between Debian and openbsd at this time. One has to work a bit to harden the default Debian install with just Standard priority packages, but this is just a few minutes work for experienced admins. Code audits are in a more advanced stage for OpenBSD; though one must bear in mind that despite all the audits there have been high profile bugs in OpenSSH recently -- so take the audited label with a pinch of salt.
+
+The Debian GNU/Linux distribution has a strong focus on security and stability. We have an Security team, automated build systems to help the security team quickly build versions across all the architectures that are supported, and policy geared towards those goals. Here is more on a security oriented comparison (https://lists.debian.org/debian-user/2003/debian-user-200308/msg00541.html) of OpenBSD and Debian.
+
+Even though you don't quite need a tool chain on every target BSD system to roll out security updates ("make release", or "make package" to build on one machine and install elsewhere), it is quite a bit more inconvenient than the Debian packaging system. Debian handles binary package distribution much better. One can have his own aptable archive and feed all productive servers from is, using Debian's native mechanisms.
+
+When it comes to real security, however, without mandatory access controls you have very little assurance. So SELinux (and the still nascent TrustedBSD) would be far better choices than OpenBSD or base Debian Stable.
+
+Even without SELinux, I find the rock solid stability of Debian stable, with the peace of mind that comes from back ported security fixes provided by the Security team, very persuasive. It is easy for an untrained recipient to keep up to date with security; and reduces the likelihood of compromise. This is very important in a commercial environment with a large number of computers, where is it important that the software NOT be upgraded every few months.
+
+There is another benefit of the Debian's Security team when it comes to the stable distribution. There is, however, only one version of the ports tree. Whereas in Debian, you have multiple versions of, e.g., apache, KDE, and X11 -one for every suite with security updates for the stable suite- there is no such thing on FreeBSD. Although, of course, the port makefile will be updated if a vulnerability has been found in a given package, the only way to plug the hole on your system in such a situation is to install the new version of the package, with all possible problems that may cause. Compare to Debian, where you have the ability to install the same version of the software, with the security fix back-ported. Also, if you're working with a ports-installed version of the vulnerable package, you'll stay vulnerable for as long as the compilation runs, which may or may not be a considerable amount of time.
+
+I have some data comparing Linux distributions and the time to patch known security vulnerabilities, no data of BSDs, however. It's available at https://people.debian.org/~jfs/debconf3/security/data/.
+
+Scalability and Performance
+I was not initially going to talk at all about performance and numbers, since these have mattered little to me personally, and performance numbers change from release to release. However, I realize that these are important decision criteria for some people, and I have attempted to look up a recent look at the numbers.
+
+The full set of benchmarks, complete with code, is available here. http://bulk.fefe.de/scalability/ Here are his words, from the conclusion section, updated to reflect the latest benchmarks.
+
+Linux 2.6 scales O(1) in all benchmarks. Words fail me on how impressive this is. If you are using Linux 2.4 right now, switch to Linux 2.6 now!
+
+NetBSD has better scalability than FreeBSD.
+
+FreeBSD 5.1 has very impressive performance and scalability. (Note that it is as yet unreleased) I foolishly assumed all BSDs to play in the same league performance-wise, because they all share a lot of code and can incorporate each other's code freely. I was wrong. FreeBSD has the second best performance of the BSDs and it even comes close to Linux 2.6.
+
+Linux 2.4 is not too bad, but it scales badly for mmap and fork.
+
+OpenBSD 3.4 performed really poorly in these tests. The disk performance sucks, the kernel was unstable, and in the network scalability department it was even outperformed by it's father, NetBSD. OpenBSD also gets points deducted for the sabotage they did to their IPv6 stack. If you are using OpenBSD, you should move away now.
+
+Conclusion
+There is no other OS or distribution that I know of which has just this mix of properties (ease of maintenance, affordability, stability, size, customizability, strong support). For the most part, I do not want to tinker with and Debug my workstation, I want to get my job done, easily, safely, and with minimal concern about the infrastructure I use. Debian helps me accomplish that.
+
+And that's still the primary reason I use it today, from a technical standpoint. Software installation and upgrade. The packages are top-notch, they as a rule install and upgrade perfectly. Software maintenance is still a really large part of any sysadmin's job, and with Debian it's simply trivial. It's a non-issue. Don't even bring it up when talking about any problems with Debian, it's not worth the effort. Borderline flawless.

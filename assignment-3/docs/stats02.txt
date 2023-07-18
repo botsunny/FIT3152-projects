@@ -1,0 +1,13 @@
+Statistics is the mathematical study of data. Using statistics, an interpretable statistical model is created to describe the data, and this model can then be used to infer something about the data or even to predict values that are not present in the sample data used to create the model. The ‘accuracy’ of prediction is not the focus of statistics.
+
+Machine learning, on the other hand, is about results. It uses the data and statistical mathematics primarily for their predictive power. In machine learning, results are the focus more than the interpretability of the model. Often the underlying statistical model is considered irrelevant (that is, a ‘black box’) as long as the predictive results are useful. As Domingos (2012) puts it, “Machine learning systems automatically learn programs from data.”
+
+Since machine learning is so capable of modeling the data, a challenge is to avoid overfitting (Rojas, 1996). The model should operate sufficiently well to produce an accurate prediction without being so specifically tailored to the sampled data that the model predicts poorly on new data.
+
+To avoid overfitting the data using machine learning methods, and indeed often in statistics, the observed data set is tested by separating out a portion of the data (known as the test set) to confirm the strength of the model built by the majority of the data (known as the training set). Often, a validation set within the training set is used to determine the validity of the predictive model before it’s confirmed on the test data set.
+
+Stewart summarizes the different approaches taken by machine learning and statistics nicely as follows:
+
+“It should be clear that these two approaches are different in their goal, despite using similar means to get there. The assessment of the machine learning algorithm uses a test set to validate its accuracy. Whereas, for a statistical model, analysis of the regression parameters via confidence intervals, significance tests, and other tests can be used to assess the model’s legitimacy.” (Stewart, 2019)
+
+Word2vec’s shallow neual network and particular learning algorithm will be discussed in the fourth article in this series, The Word2vec Classifier. To understand the concepts and terms of machine learning and neural networks from the statistician’s point of view, we’ll review how linear regression is performed using machine learning and how that process is applied to logistic regression using a neural network.

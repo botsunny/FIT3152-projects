@@ -1,0 +1,47 @@
+Statistical learning refers to a set of tools for making sense of complex
+datasets. In recent years, we have seen a staggering increase in the scale and
+scope of data collection across virtually all areas of science and industry.
+As a result, statistical learning has become a critical toolkit for anyone who
+wishes to understand data — and as more and more of today’s jobs involve
+data, this means that statistical learning is fast becoming a critical toolkit
+for everyone.
+One of the first books on statistical learning — The Elements of Statistical Learning (ESL, by Hastie, Tibshirani, and Friedman) — was published
+in 2001, with a second edition in 2009. ESL has become a popular text not
+only in statistics but also in related fields. One of the reasons for ESL’s
+popularity is its relatively accessible style. But ESL is best-suited for individuals with advanced training in the mathematical sciences.
+An Introduction to Statistical Learning (ISL) arose from the clear need
+for a broader and less technical treatment of the key topics in statistical
+learning. The intention behind ISL is to concentrate more on the applications of the methods and less on the mathematical details. Beginning with
+Chapter 2, each chapter in ISL contains a lab illustrating how to implement
+the statistical learning methods seen in that chapter using the popular statistical software package R. These labs provide the reader with valuable
+hands-on experience.
+ISL is appropriate for advanced undergraduates or master’s students in
+Statistics or related quantitative fields, or for individuals in other disciplines
+who wish to use statistical learning tools to analyze their data. It can be
+used as a textbook for a course spanning two semesters.
+The first edition of ISL covered a number of important topics, including
+sparse methods for classification and regression, decision trees, boosting,
+support vector machines, and clustering. Since it was published in 2013, it
+has become a mainstay of undergraduate and graduate classrooms across
+the United States and worldwide, as well as a key reference book for data
+scientists.
+In this second edition of ISL, we have greatly expanded the set of topics
+covered. In particular, the second edition includes new chapters on deep
+learning (Chapter 10), survival analysis (Chapter 11), and multiple testing
+(Chapter 13). We have also substantially expanded some chapters that were
+part of the first edition: among other updates, we now include treatments
+of naive Bayes and generalized linear models in Chapter 4, Bayesian additive regression trees in Chapter 8, and matrix completion in Chapter 12.
+Furthermore, we have updated the R code throughout the labs to ensure
+that the results that they produce agree with recent R releases.
+We are grateful to these readers for providing valuable comments on the
+first edition of this book: Pallavi Basu, Alexandra Chouldechova, Patrick
+Danaher, Will Fithian, Luella Fu, Sam Gross, Max Grazier G’Sell, Courtney Paulson, Xinghao Qiao, Elisa Sheng, Noah Simon, Kean Ming Tan,
+Xin Lu Tan. We thank these readers for helpful input on the second edition of this book: Alan Agresti, Iain Carmichael, Yiqun Chen, Erin Craig,
+Daisy Ding, Lucy Gao, Ismael Lemhadri, Bryan Martin, Anna Neufeld, Geoff Tims, Carsten Voelkmann, Steve Yadlowsky, and James Zou. We also
+thank Anna Neufeld for her assistance in reformatting the R code throughout this book. We are immensely grateful to Balasubramanian “Naras”
+Narasimhan for his assistance on both editions of this textbook.
+It has been an honor and a privilege for us to see the considerable impact
+that the first edition of ISL has had on the way in which statistical learning
+is practiced, both in and out of the academic setting. We hope that this new
+edition will continue to give today’s and tomorrow’s applied statisticians
+and data scientists the tools they need for success in a data-driven world.
